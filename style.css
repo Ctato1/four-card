@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+::root {
+  --color-green: #44d3d2;
+  --color-red: c;
+  --color-yellow: #fcae4a;
+  --color-blue: #549ef2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__text {
+  color: #4d4f62;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 275;
+  letter-spacing: 0.25px;
+}
+.header__info {
+  color: #4d4f62;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+header p {
+  color: #4d4f62;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  letter-spacing: 0.104px;
+}
+
+/* container */
+
+.container {
+  /* flex-wrap: wrap; */
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container .container-box {
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  width: 350px;
+  height: 250px;
+  border-radius: 8px;
+  position: relative;
+}
+.container .container-box svg {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+.container .container-box h5 {
+  color: #4d4f62;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 32px;
+  padding-left: 32px;
+}
+.container .container-box p {
+  color: #4d4f62;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px; /* 176.923% */
+  letter-spacing: 0.09px;
+  padding: 6px 30px;
+}
+/*  */
+.container .centered div {
+  margin: 10px 0;
+}
+
+.container .left {
+  border-top: 5px solid #44d3d2;
+}
+
+.container .centered .center:nth-child(1) {
+  border-top: 5px solid #ea5454;
+}
+.container .centered .center:nth-child(2) {
+  border-top: 5px solid #fcae4a;
+}
+.container .right {
+  border-top: 5px solid #549ef2;
+}
+
+/* media */
+@media only screen and (max-width: 830px) {
+  .container .container-box {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    margin-top: 85px;
+    padding: 0 10px;
+  }
+  .header__text {
+    font-family: Poppins;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 0.167px;
+  }
+  .header__info {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.167px;
+  }
+  header p {
+    padding-top: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    letter-spacing: 0.104px;
+  }
+}
